@@ -52,7 +52,7 @@ Partial Class Landing
         Logout.Cursor = Cursors.Hand
         Logout.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Logout.ForeColor = Color.FromArgb(CByte(192), CByte(64), CByte(0))
-        Logout.Location = New Point(69, 18)
+        Logout.Location = New Point(61, 18)
         Logout.Name = "Logout"
         Logout.Size = New Size(77, 24)
         Logout.TabIndex = 1

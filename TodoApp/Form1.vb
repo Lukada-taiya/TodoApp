@@ -1,5 +1,4 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class MainWindow
 
@@ -31,7 +30,6 @@ Public Class MainWindow
             dtpDueDate.Focus()
             Exit Sub
         End If
-
 
         Dim textTitle As String = txtTitle.Text
         Dim textDescription As String = txtDescription.Text

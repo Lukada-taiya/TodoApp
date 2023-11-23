@@ -39,7 +39,7 @@ Public Class Login
     End Sub
 
     Private Sub btExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Close()
+        Me.Close()
     End Sub
 
 End Class

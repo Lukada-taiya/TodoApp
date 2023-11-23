@@ -193,6 +193,7 @@ Partial Class MainWindow
         ' btnAdd
         ' 
         btnAdd.BackColor = Color.OrangeRed
+        btnAdd.Cursor = Cursors.Hand
         btnAdd.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnAdd.ForeColor = Color.Transparent
         btnAdd.Location = New Point(181, 389)
@@ -251,6 +252,7 @@ Partial Class MainWindow
         ' btnUpdate
         ' 
         btnUpdate.BackColor = Color.OrangeRed
+        btnUpdate.Cursor = Cursors.Hand
         btnUpdate.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnUpdate.ForeColor = Color.Transparent
         btnUpdate.Location = New Point(381, 389)
@@ -271,6 +273,7 @@ Partial Class MainWindow
         ' btnDelete
         ' 
         btnDelete.BackColor = Color.OrangeRed
+        btnDelete.Cursor = Cursors.Hand
         btnDelete.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnDelete.ForeColor = Color.Transparent
         btnDelete.Location = New Point(576, 389)
@@ -294,6 +297,7 @@ Partial Class MainWindow
         ' btnSearch
         ' 
         btnSearch.BackColor = Color.OrangeRed
+        btnSearch.Cursor = Cursors.Hand
         btnSearch.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnSearch.ForeColor = Color.Transparent
         btnSearch.Location = New Point(309, 58)
@@ -306,6 +310,7 @@ Partial Class MainWindow
         ' btnClear
         ' 
         btnClear.BackColor = Color.OrangeRed
+        btnClear.Cursor = Cursors.Hand
         btnClear.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnClear.ForeColor = Color.Transparent
         btnClear.Location = New Point(771, 389)
@@ -351,6 +356,7 @@ Partial Class MainWindow
         ' btnReturn
         ' 
         btnReturn.BackColor = Color.White
+        btnReturn.Cursor = Cursors.Hand
         btnReturn.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnReturn.ForeColor = Color.FromArgb(CByte(192), CByte(64), CByte(0))
         btnReturn.Location = New Point(480, 658)
@@ -394,7 +400,6 @@ Partial Class MainWindow
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(Title)
-        Cursor = Cursors.Hand
         Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4, 3, 4, 3)

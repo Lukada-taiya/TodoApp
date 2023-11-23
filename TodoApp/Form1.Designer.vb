@@ -52,6 +52,7 @@ Partial Class MainWindow
         picClose = New PictureBox()
         picLogout = New PictureBox()
         lblLogout = New Label()
+        btnReturn = New Button()
         CType(dataGridView, ComponentModel.ISupportInitialize).BeginInit()
         CType(picClose, ComponentModel.ISupportInitialize).BeginInit()
         CType(picLogout, ComponentModel.ISupportInitialize).BeginInit()
@@ -347,12 +348,25 @@ Partial Class MainWindow
         lblLogout.TabIndex = 29
         lblLogout.Text = "Logout"
         ' 
+        ' btnReturn
+        ' 
+        btnReturn.BackColor = Color.White
+        btnReturn.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        btnReturn.ForeColor = Color.FromArgb(CByte(192), CByte(64), CByte(0))
+        btnReturn.Location = New Point(480, 658)
+        btnReturn.Name = "btnReturn"
+        btnReturn.Size = New Size(167, 38)
+        btnReturn.TabIndex = 30
+        btnReturn.Text = "Return"
+        btnReturn.UseVisualStyleBackColor = False
+        ' 
         ' MainWindow
         ' 
         AutoScaleDimensions = New SizeF(11F, 23F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(192), CByte(64), CByte(0))
         ClientSize = New Size(1100, 710)
+        Controls.Add(btnReturn)
         Controls.Add(lblLogout)
         Controls.Add(picLogout)
         Controls.Add(picClose)
@@ -423,4 +437,5 @@ Partial Class MainWindow
     Friend WithEvents picClose As PictureBox
     Friend WithEvents picLogout As PictureBox
     Friend WithEvents lblLogout As Label
+    Friend WithEvents btnReturn As Button
 End Class

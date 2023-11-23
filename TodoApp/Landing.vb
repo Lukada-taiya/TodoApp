@@ -13,7 +13,7 @@ Public Class Landing
     Private Sub ManageTasks_Click(sender As Object, e As EventArgs) Handles Label2.Click, picTask.Click
         Dim mainWindow As New MainWindow(_userId)
         mainWindow.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Logout_Click(sender As Object, e As EventArgs) Handles Logout.Click, picLogout.Click

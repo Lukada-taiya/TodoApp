@@ -214,4 +214,10 @@ Public Class MainWindow
             Login.Show()
         End If
     End Sub
+
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        Dim landingWindow As New Landing(_userId)
+        landingWindow.Show()
+        Me.Close()
+    End Sub
 End Class

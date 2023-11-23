@@ -328,9 +328,10 @@ Partial Class MainWindow
         ' picLogout
         ' 
         picLogout.Image = CType(resources.GetObject("picLogout.Image"), Image)
-        picLogout.Location = New Point(27, 668)
+        picLogout.Location = New Point(34, 668)
         picLogout.Name = "picLogout"
-        picLogout.Size = New Size(45, 30)
+        picLogout.Size = New Size(31, 30)
+        picLogout.SizeMode = PictureBoxSizeMode.StretchImage
         picLogout.TabIndex = 28
         picLogout.TabStop = False
         ' 
@@ -340,7 +341,7 @@ Partial Class MainWindow
         lblLogout.Cursor = Cursors.Hand
         lblLogout.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         lblLogout.ForeColor = Color.Transparent
-        lblLogout.Location = New Point(64, 674)
+        lblLogout.Location = New Point(64, 672)
         lblLogout.Name = "lblLogout"
         lblLogout.Size = New Size(77, 24)
         lblLogout.TabIndex = 29

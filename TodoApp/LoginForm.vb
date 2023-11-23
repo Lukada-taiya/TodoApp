@@ -30,10 +30,12 @@ Public Class LoginForm
             While record.Read()
                 userId = record("UserIdpk").ToString()
             End While
-            Dim mainWindow As New MainWindow(userId)
-            mainWindow.Show()
+            'Dim mainWindow As New MainWindow(userId)
+            'mainWindow.Show()
+            Dim landingWindow As New Landing(userId)
+            landingWindow.Show()
             txtPassword.Text = ""
-            Me.Hide()
+            Login.Hide()
         Else
             MessageBox.Show("Invalid Name or Password")
             txtPassword.Text = ""

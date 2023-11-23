@@ -207,7 +207,7 @@ Public Class MainWindow
         Login.Close()
     End Sub
 
-    Private Sub _Click(sender As Object, e As EventArgs) Handles picLogout.Click, lblLogout.Click
+    Private Sub Logout_Click(sender As Object, e As EventArgs) Handles picLogout.Click, lblLogout.Click
         If MessageBox.Show("Are you sure you want logout of the system", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
             Me.Close()
             Login.switchPanel(LoginForm)

@@ -58,9 +58,13 @@ Public Class SignUpForm
             While record.Read()
                 userId = record("UserIdpk").ToString()
             End While
-            Dim mainWindow As New MainWindow(userId)
-            mainWindow.Show()
-            Me.Hide()
+            'Dim mainWindow As New MainWindow(userId)
+            'mainWindow.Show()
+            Dim landingWindow As New Landing(userId)
+            landingWindow.Show()
+            txtPassword.Text = ""
+            txtConfirmPassword.Text = ""
+            Login.Hide()
         End If
         con.Close()
     End Sub

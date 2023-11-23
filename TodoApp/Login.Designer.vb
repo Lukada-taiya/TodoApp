@@ -35,7 +35,7 @@ Partial Class Login
         Label3.AutoSize = True
         Label3.Font = New Font("Arial", 16.2F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.ForeColor = Color.Transparent
-        Label3.Location = New Point(174, 21)
+        Label3.Location = New Point(223, 20)
         Label3.Name = "Label3"
         Label3.Size = New Size(321, 33)
         Label3.TabIndex = 23

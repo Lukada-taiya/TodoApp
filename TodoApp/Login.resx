@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="HelpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -130,7 +127,7 @@
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAdoAAAHaCAIAAAAohh/4AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAthVJREFUeF7s/Yd7E9fatw1//8N3HN/3luN5n+e+n3vve++dQEJzt3rvkiV300xv
+        cgAAEnIBXmVb4wAAthVJREFUeF7s/Yd7E9fatw1//8N3HN/3luN5n+e+n3vve++dQEJzt3rvkiV300xv
         qYQECIQWAqG6N2zciyRXOmmE3nsxvWNjW3U0mlFb7zWS8WYTItMMMnud+WUxlmVN1alLS0sz/58ABoPB
         YCIArGMMBoOJCLCOMRgMJiLAOsZgMJiIAOsYg8FgIgKsYwwGg4kIsI4xGAwmIsA6xmAwmIgA6xiDwWAi
         AqxjDAaDiQiwjjEYDCYiwDrGYDCYiADrGIPBYCICrGMMBoOJCLCOMRgMJiLAOsZgMJiIAOsYg8FgIgKs

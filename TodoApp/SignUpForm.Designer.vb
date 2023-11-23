@@ -82,6 +82,7 @@ Partial Class SignUpForm
         ' btnSignUp
         ' 
         btnSignUp.BackColor = Color.OrangeRed
+        btnSignUp.Cursor = Cursors.Hand
         btnSignUp.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnSignUp.ForeColor = Color.Transparent
         btnSignUp.Location = New Point(77, 234)
@@ -94,6 +95,7 @@ Partial Class SignUpForm
         ' btnExit
         ' 
         btnExit.BackColor = Color.OrangeRed
+        btnExit.Cursor = Cursors.Hand
         btnExit.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnExit.ForeColor = Color.Transparent
         btnExit.Location = New Point(224, 234)

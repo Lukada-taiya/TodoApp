@@ -58,6 +58,7 @@ Partial Class LoginForm
         ' btnLogin
         ' 
         btnLogin.BackColor = Color.OrangeRed
+        btnLogin.Cursor = Cursors.Hand
         btnLogin.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnLogin.ForeColor = Color.Transparent
         btnLogin.Location = New Point(87, 205)
@@ -70,6 +71,7 @@ Partial Class LoginForm
         ' btnExit
         ' 
         btnExit.BackColor = Color.OrangeRed
+        btnExit.Cursor = Cursors.Hand
         btnExit.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
         btnExit.ForeColor = Color.Transparent
         btnExit.Location = New Point(234, 205)

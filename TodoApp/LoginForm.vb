@@ -32,6 +32,7 @@ Public Class LoginForm
             End While
             Dim mainWindow As New MainWindow(userId)
             mainWindow.Show()
+            txtPassword.Text = ""
             Me.Hide()
         Else
             MessageBox.Show("Invalid Name or Password")

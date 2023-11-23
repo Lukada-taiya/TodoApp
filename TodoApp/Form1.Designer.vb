@@ -50,8 +50,11 @@ Partial Class MainWindow
         btnSearch = New Button()
         btnClear = New Button()
         picClose = New PictureBox()
+        picLogout = New PictureBox()
+        lblLogout = New Label()
         CType(dataGridView, ComponentModel.ISupportInitialize).BeginInit()
         CType(picClose, ComponentModel.ISupportInitialize).BeginInit()
+        CType(picLogout, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Title
@@ -322,12 +325,35 @@ Partial Class MainWindow
         picClose.TabIndex = 27
         picClose.TabStop = False
         ' 
+        ' picLogout
+        ' 
+        picLogout.Image = CType(resources.GetObject("picLogout.Image"), Image)
+        picLogout.Location = New Point(27, 668)
+        picLogout.Name = "picLogout"
+        picLogout.Size = New Size(45, 30)
+        picLogout.TabIndex = 28
+        picLogout.TabStop = False
+        ' 
+        ' lblLogout
+        ' 
+        lblLogout.AutoSize = True
+        lblLogout.Cursor = Cursors.Hand
+        lblLogout.Font = New Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        lblLogout.ForeColor = Color.Transparent
+        lblLogout.Location = New Point(64, 674)
+        lblLogout.Name = "lblLogout"
+        lblLogout.Size = New Size(77, 24)
+        lblLogout.TabIndex = 29
+        lblLogout.Text = "Logout"
+        ' 
         ' MainWindow
         ' 
         AutoScaleDimensions = New SizeF(11F, 23F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(192), CByte(64), CByte(0))
-        ClientSize = New Size(1100, 656)
+        ClientSize = New Size(1100, 710)
+        Controls.Add(lblLogout)
+        Controls.Add(picLogout)
         Controls.Add(picClose)
         Controls.Add(btnClear)
         Controls.Add(btnSearch)
@@ -353,6 +379,7 @@ Partial Class MainWindow
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(Title)
+        Cursor = Cursors.Hand
         Font = New Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4, 3, 4, 3)
@@ -361,6 +388,7 @@ Partial Class MainWindow
         Text = "Todo App"
         CType(dataGridView, ComponentModel.ISupportInitialize).EndInit()
         CType(picClose, ComponentModel.ISupportInitialize).EndInit()
+        CType(picLogout, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -392,4 +420,6 @@ Partial Class MainWindow
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents picClose As PictureBox
+    Friend WithEvents picLogout As PictureBox
+    Friend WithEvents lblLogout As Label
 End Class

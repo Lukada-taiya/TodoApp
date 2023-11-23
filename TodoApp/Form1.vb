@@ -64,7 +64,9 @@ Public Class MainWindow
     End Sub
 
     Private Sub LoadDataInGrid()
-        Dim command As New SqlCommand("SELECT TaskIdpk As 'Task Id', Title, Description, Due_Date As 'Due On', Priority_Level AS Priority, Status, Creation_Date AS 'Created On', Completion_Date AS 'Completed On' FROM Tasks WHERE UserIdfk = '" & _userId & "' ORDER BY Due_Date, Priority_Level DESC", con)
+        dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        Dim Command As New SqlCommand("SELECT TaskIdpk As 'Task Id', Title, Description, Due_Date As 'Due On', Priority_Level AS Priority, Status, Creation_Date AS 'Created On', Completion_Date AS 'Completed On' FROM Tasks WHERE UserIdfk = '" & _userId & "' ORDER BY Due_Date, Priority_Level DESC", con)
         Dim sda As New SqlDataAdapter(command)
         Dim dt As New DataTable
         sda.Fill(dt)
@@ -203,5 +205,13 @@ Public Class MainWindow
 
     Private Sub picClose_Click(sender As Object, e As EventArgs) Handles picClose.Click
         Login.Close()
+    End Sub
+
+    Private Sub _Click(sender As Object, e As EventArgs) Handles picLogout.Click, lblLogout.Click
+        If MessageBox.Show("Are you sure you want logout of the system", "Logout", MessageBoxButtons.YesNo) = DialogResult.Yes Then
+            Me.Close()
+            Login.switchPanel(LoginForm)
+            Login.Show()
+        End If
     End Sub
 End Class

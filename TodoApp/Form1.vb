@@ -159,8 +159,8 @@ Public Class MainWindow
         End If
 
         con.Open()
-        Dim command As New SqlCommand("SELECT TaskIdpk As 'Task Id', Title, Description, Due_Date As 'Due On', Priority_Level AS Priority, Status, Creation_Date AS 'Created On', Completion_Date AS 'Completed On' FROM Tasks WHERE UserIdfk = '" & _userId & "' AND TaskIdpk = '" & textTaskId & "' OR Title = '" & textTitle & "' OR Description = '" & textDescription & "' OR Due_Date = '" & dateDueDate &
-                                      "' OR Priority_Level = '" & textPriority & "' OR Status = '" & status & "' OR Creation_Date = '" & dateCreationDate & "' OR Completion_Date = '" & dateCompletionDate & "'", con)
+        Dim command As New SqlCommand("SELECT TaskIdpk As 'Task Id', Title, Description, Due_Date As 'Due On', Priority_Level AS Priority, Status, Creation_Date AS 'Created On', Completion_Date AS 'Completed On' FROM Tasks WHERE UserIdfk = '" & _userId & "' AND (TaskIdpk = '" & textTaskId & "' OR Title = '" & textTitle & "' OR Description = '" & textDescription & "' OR Due_Date = '" & dateDueDate &
+                                      "' OR Priority_Level = '" & textPriority & "' OR Status = '" & status & "' OR Creation_Date = '" & dateCreationDate & "' OR Completion_Date = '" & dateCompletionDate & "')", con)
 
         Dim sda As New SqlDataAdapter(command)
         Dim dt As New DataTable

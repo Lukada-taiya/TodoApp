@@ -207,6 +207,7 @@ Partial Class MainWindow
         ' 
         ' dtpCreationDate
         ' 
+        dtpCreationDate.Enabled = False
         dtpCreationDate.Location = New Point(647, 185)
         dtpCreationDate.Name = "dtpCreationDate"
         dtpCreationDate.Size = New Size(258, 30)
@@ -226,6 +227,7 @@ Partial Class MainWindow
         ' 
         ' dtpCompletionDate
         ' 
+        dtpCompletionDate.Enabled = False
         dtpCompletionDate.Location = New Point(647, 245)
         dtpCompletionDate.Name = "dtpCompletionDate"
         dtpCompletionDate.Size = New Size(258, 30)
